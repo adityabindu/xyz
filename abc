@@ -1,0 +1,422 @@
+1. Create employee registration webpage using HTML form objects
+<html>
+<body>
+<Center>
+<img src="employee_icon.png" height=52 width=52>
+<Font size="+3" color=red>Employee Registration Form</font>
+<form method=post action="prac.html">
+<table>
+<tr>
+<td></td>
+<td><input type=radio name=initial checked>Mr.
+<input type=radio name=initial>Mrs.
+<input type=radio name=initial>Ms.</td>
+</tr><tr>
+<td>First Name</td>
+<td><input type=text name=fn placeholder="First Name"></td>
+</tr><tr>
+<td>Last Name</td>
+<td><input type=text name=ln placeholder="Last Name"></td>
+</tr> <tr>
+<td>Mail Address1</td>
+<td><input type=text name=add1></td>
+</tr><tr>
+<td>Mail Address2</td>
+<td><input type=text name=add2></td>
+</tr><tr>
+<td>City</td>
+<td><input type=text name=ct></td>
+</tr><tr>
+<td>State</td>
+<td><select name=state>
+<option value="Gujarat">Gujarat
+<option value="Maharastra">Maharastra
+<option value="Karnataka">Karnataka
+<option value="Delhi">Delhi
+</select>
+</td>
+</tr><tr>
+<td>Zip</td>
+<td><input type=text name=zp></td>
+</tr><tr>
+<td>Upload Photo</td>
+<td><input type=file name=photo></td>
+</tr><tr>
+<td>E-Mail</td>
+<td><input type=text name=email size=30></td>
+</tr><tr>
+
+<td>Mobile</td>
+<td><input type=text name=mob placeholder="+91"></td>
+</tr><tr>
+<td>Languages known</td>
+<td><input type=checkbox name=lk value=Gujarati checked>Gujarati</td>
+
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=Hindi checked>Hindi</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=English checked>English</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=Marathi >Marathi</td>
+</tr><tr>
+<td>Additional Information</td>
+<td><textarea name=add rows=3 cols=20 placeholder="Optional" wrap></textarea></td>
+</tr><tr>
+<td></td>
+<td><input type=submit value=submit>&nbsp;<input type=reset value=reset></td>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+2. Validate JavaScript the registration ,user login, user profile and payment by credit card pages using JavaScript.
+<html>
+<head>
+<script>
+function validateForm(){
+var  fname=document.myForm.firstname.value;
+var  lname=document.myForm.lastname.value;
+var  email=document.myForm.email.value;
+var  bday=document.myForm.birthday.value;
+var  gender=document.myForm.gender.value;
+if(fanme==""){
+window.alert("please enter your name");
+fname.focus();
+return false;
+}
+if("lname==""){
+alert("please enter last name");
+return false;
+}
+if("email==""){
+alert("please enter birth day");
+return false;
+}
+if("gender=="");
+return false;
+}
+else{
+alert("Thank you for your registration");
+}}
+</script>
+</head>
+<body>
+<form name="myForm"submit="return validateForm()" method="post">
+<h4>REGISTRATION FORM</h4>
+<p><font color="red">*</font>Mandatory Fields</p>
+<table>
+<tr>
+<td>
+First Name:*
+</td>
+<td>
+<input type="text" name="firstname"/>
+</td></tr>
+<tr>
+
+<td>
+Last Name:*
+</td>
+<td>
+<input type="text" name="lastname"/>
+</td>
+</tr>
+<tr>
+Email:*
+</td>
+<td>
+<input type="text" name="email"/>
+</td></tr><tr><td>
+Date of Birth:*
+</td>
+<td>
+<input type="date" name="birthday"/>
+</td></tr><tr><td>
+Your Website:*
+</td>
+<td>
+<input type="url" name="homepage" value=""/>
+</td></tr><tr><td>
+Gender:*
+</td>
+<td>
+<select name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</td></tr><tr><td>
+<input type="submit" name="reg value" Register""/>
+</td></tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+3. Write a Program to create a HTML page, which has properly aligned paragraphs with image along with it .
+<html>
+<head>
+<title> Application Form Using HTML </title>
+</head>
+<form>
+<fieldset>
+<legend><h3>PERSONAL INFORMATION </h3></legend>
+<imgsrc="C:\Users\BIST\Desktop\person.jpg" alt="Person" style="width:304px;height:228px"; align="right">
+First name:
+<input type="text" name="firstname" placeholder="Enter First name" required><br><br><br> Last name:
+<input type="text" name="lastname" placeholder=" Enter Last Name" required><br><br> Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female <br><br><br> Birthday:
+<input type="datetime-local" name="bdaytime"><br><br><br> Country :<input list="Country" name="Country">
+<datalist id="Country">
+<option value="India">
+<option value="Japan">
+<option value="Australia">
+<option value="United States">
+<option value="United Kingdom">
+</datalist>
+<br><br>
+E-mail:
+<input type="email" name="email"><br><br> Select your favorite color:
+<input type="color" name="favcolor" value="#ff0000"><br><br> Address: <br/><textarea rows='5' cols='40'></textarea>
+</fieldset>
+<br><br>
+<fieldset>
+<legend><h3> EDUCATIONAL DETAILS </h3></legend> Degree :
+
+<select name="degree">
+<option value="B.E"> B.E </option>
+<option value="M.E">M.E</option>
+<option value="PhD"> PhD </option>
+</select><br><br>
+Certified Courses, any: <textarea rows='5' cols='40'></textarea>
+</fieldset>
+<br><br>
+<fieldset>
+<legend><h3> WORK EXPERIENCE </h3></legend>
+Knowledge in :<input type="checkbox" name="HTML" value="HTML"> HTML
+<input type="checkbox" name=".NET" value=".NET"> .NET
+
+<input type="checkbox" name="JAVA" value="JAVA"> JAVA
+<input type="checkbox" name="PHP" value="PHP"> PHP
+<br><br>
+Years of Experience :
+<input type="number" name="years" min="0" max="50" step="1" value="0">
+</fieldset>
+<br><br>
+<input type="submit" title="Enter the above details and click me" />
+</form>
+</body>
+</html>
+
+
+
+
+
+
+4. To create a flip-card using HTML5 and CSS3
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+5. Write a program to create a flipcard with registration form at its backside.
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h4>REGISTRATION FORM</h4>
+      <p><font color="red">*</font>Mandatory Fields</p>
+      <table>
+      <tr>
+      <td>
+      First Name:*
+      </td>
+      <td>
+      <input type="text" name="firstname"/>
+      </td></tr>
+      <tr>
+
+      <td>
+      Last Name:*
+      </td>
+      <td>
+      <input type="text" name="lastname"/>
+      </td>
+      </tr>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+6.A web application that lists all cookies stored in the browser on clicking â€œlist Cookies â€button .Addcookies if necessary
+
+Cookielist.php
+
+<html>
+<head>
+<title> Choose List Cookies </title>
+</head>
+<body>
+<form action="Displaycookie.php" method="POST"/>
+<input type="submit" name="submit" value="List Cookies"/>
+</form>
+<?php
+setcookie("Name","Madhu");
+setCookie("Age","29");
+setCookie("Address","Delhi");
+?>
+</body>
+</html>
+
+
+Displaycookie.php
+
+<?php
+$cookie=$_COOKIE;
+foreach ($cookie as $key=>$val)
+echo "<br>$key : $val";
+?>
+
